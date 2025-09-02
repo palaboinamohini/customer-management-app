@@ -2,8 +2,6 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import CustomerListPage from './Pages/CustomerListPage'
 import CustomerDetailPage from './Pages/CustomerDetailPage'
 import CustomerFormPage from './Pages/CustomerFormPage'
-import './App.css'
-
 const App = () => (
   <BrowserRouter>
       <Routes>
