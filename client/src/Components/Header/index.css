@@ -1,0 +1,30 @@
+.header-bg-container{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.header-button{
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 8px;
+    margin: 10px;
+    background-color: #064e73;
+    border: 0px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+@media screen and (min-width:576px){
+    .header-button{
+        font-size: 15px;
+    }
+}

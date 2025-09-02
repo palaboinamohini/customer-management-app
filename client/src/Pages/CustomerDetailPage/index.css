@@ -1,0 +1,29 @@
+
+.customer-details-bg-main-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #d9e7fc;
+    min-height: 100vh;
+    width: 100%;
+    padding: 25px;
+}
+.customer-details-bg-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80%;
+}
+.customer-details-main-heading{
+    font-family: "Bree serif";
+    font-size: 23px;
+    color: #033d69;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media screen and (min-width:768px){
+    .customer-details-main-heading{
+        font-size: 35px;
+    }
+}
