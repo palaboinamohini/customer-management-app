@@ -1,14 +1,19 @@
 const express = require('express');
 const sqlite3 = require('sqlite3').verbose();
+const path = require('path');
 const cors = require('cors');
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const app = express();
 app.use(express.json());
 app.use(cors());
 
-const db = new sqlite3.Database("./database.db");
+const db = new sqlite3.Database(path.join(__dirname, 'database.db'));
 
 //  Customers
+
+app.get('/', (req, res) => {
+  res.send('Server is running');
+});
 
 // Get customer by ID
 app.get("/api/customers/:id", (req, res) => {
